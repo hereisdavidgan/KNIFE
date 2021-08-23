@@ -1,10 +1,5 @@
-
-import requests
-print('Hello World')
-
-url = "https://www.baidu,com"
-data = '{"id":"utf-8"}'
-# 字符串格式
-res = requests.post(url=url,data=data)
-print(res.text)
-
+from urllib import request
+url = r"http://www.baidu.com"
+req = request.Request(url)  # 构造请求
+response = request.urlopen(req).read().decode()  # 获取响应
+print(response)
