@@ -39,24 +39,37 @@
 #########################################################
 """ 输入三个整数x,y,z，请把这三个数由小到大输出。 """
 """ 我们想办法把最小的数放到x上，先将x与y进行比较，如果x>y则将x与y的值进行交换，然后再用x与z进行比较，如果x>z则将x与z的值进行交换，这样能使x最小。 """
-""" i = []
+"""
+i = []
 for j in range(3):
     x = int(input('int\n'))
     i.append(x)
 i.sort()
-print(i) """
+print(i) 
+"""
+# a = []
+# for i in range(0, 3):
+#     j = int(input())
+#     a.append(j)
+# for k in range(0, 3):
+#     for l in range(k, 3):
+#         if (a[k] > a[l]):
+#             tmp = a[k]
+#             a[k] = a[l]
+#             a[l] = tmp
+# print(a)
+
+""" 
 a=[1,3,5,2,4,5,7]
-
 n=len(a)
-
 for i in range(0,n):
   for j in range(i,n) :
      if (a[i] >= a[j] ):
          tmp =a[i]
          a[i]=a[j]
          a[j]=tmp
-
 print (a)
+ """
 #########################################################
 
 
