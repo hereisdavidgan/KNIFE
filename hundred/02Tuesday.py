@@ -11,7 +11,7 @@
 #     for l in range(k, 3):
 #         if (a[k] > a[l]):
 #             tmp = a[k]
-#             a[k] = a[l]
+#             a[k] = a[l]3452
 #             a[l] = tmp
 # print(a)
 
