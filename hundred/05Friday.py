@@ -16,8 +16,48 @@
 已抽签决定比赛名单。有人向队员打听比赛的名单。
 a说他不和x比，c说他不和x,z比，请编程序找出三队赛手的名单。"""
 
-for a in ['x', 'y', 'z']:
-    for b in ['x', 'y', 'z']:
-        for c in ['x', 'y', 'z']:
-            if(a != b) and (b != c) and (c != a) and (a != 'x') and (c != 'x') and (c != 'z'):
-                print('a和%s比赛，b和%s比赛，c和%s比赛' % (a, b, c))
+# for a in ['x', 'y', 'z']:
+#     for b in ['x', 'y', 'z']:
+#         for c in ['x', 'y', 'z']:
+#             if(a != b) and (b != c) and (c != a) and (a != 'x') and (c != 'x') and (c != 'z'):
+#                 print('a和%s比赛，b和%s比赛，c和%s比赛' % (a, b, c))
+#########################################################
+"""23 打印出如下图案（菱形）:"""
+# n = int(input('enter a number:'))
+# for  i  in range(1,n+1,2):
+#     k = (n-i)//2
+#     print( ' '* k , '*' * i)
+
+# for  p in range(n-2,0,-2):
+#     o = (n-p)//2
+#     print(' '*o, '*'*p)
+#########################################################
+""" def pic(lines):    
+    middle, lines = int(lines / 2), int(lines / 2) * 2 + 1    
+    for i in range(1, lines + 1):        
+        empty = abs(i - middle - 1)        
+        print(' ' * empty, '*' * (2 * (middle - empty) + 1))
+line = 7 # 设置输出行数
+pic(7) """
+#########################################################
+"""24 有一分数序列：2/1，3/2，5/3，8/5，13/8，21/13...求出这个数列的前20项之和"""
+# a = 1
+# b = 2
+# tmp = 0
+# total = 0
+# for i in range(20):
+#     total += b/a
+#     tmp = b
+#     b += a
+#     a = tmp
+# print(total)
+#########################################################
+"""25 求1+2!+3!+...+20!的和"""
+
+# total = 0
+# for i in range(1, 21):
+#     tmp = 1
+#     for a in range(i):
+#         tmp *= (a+1)
+#     total += tmp
+# print(total)
