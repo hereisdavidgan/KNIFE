@@ -71,9 +71,97 @@ print(age(5)) """
 # else:
 #     print("不是5位")
 
-a = input("输入一串数字: ")
+""" a = input("输入一串数字: ")
 b = a[::-1]
 if a == b:
     print("%s 是回文" % a)
 else:
     print("%s 不是回文" % a)
+ """
+#########################################################
+"""31 请输入星期几的第一个字母来判断一下是星期几，
+如果第一个字母一样，则继续判断第二个字母"""
+# letter = input("please input:")
+# if letter == 'S':
+#     print ('please input second letter:')
+#     letter = input("please input:")
+#     if letter == 'a':
+#         print ('Saturday')
+#     elif letter  == 'u':
+#         print ('Sunday')
+#     else:
+#         print ('data error')
+
+# elif letter == 'F':
+#     print ('Friday')
+
+# elif letter == 'M':
+#     print ('Monday')
+
+# elif letter == 'T':
+#     print ('please input second letter')
+#     letter = input("please input:")
+
+#     if letter  == 'u':
+#         print ('Tuesday')
+#     elif letter  == 'h':
+#         print ('Thursday')
+#     else:
+#         print ('data error')
+
+# elif letter == 'W':
+#     print ('Wednesday')
+# else:
+#     print ('data error')
+#########################################################
+"""32 按逗号分隔列表。"""
+# s = [1,2,3,4,5,6,7]
+# for i in range(len(s)-1):
+#     print(s[i],end=",")
+# print(s[-1])
+#########################################################
+"""33 练习函数调用。使用函数，输出三次 RUNOOB 字符串。"""
+# def runoob():
+#     print("RUNOOB")
+
+
+# def runoobs():
+#     for i in range(3):
+#         runoob()
+
+
+# if __name__ == "__main__":
+#     runoobs()
+#########################################################
+"""34 文本颜色设置"""
+""" class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+print (bcolors.HEADER + "95m紫色" + bcolors.ENDC)
+print (bcolors.OKBLUE + "94m蓝色?" + bcolors.ENDC)
+print (bcolors.OKGREEN + "93m绿色" + bcolors.ENDC)
+print (bcolors.WARNING + "92m黄色?" + bcolors.ENDC)
+print (bcolors.FAIL + "91m红色" + bcolors.ENDC)
+print (bcolors.ENDC + "0m普通色" + bcolors.ENDC)
+print (bcolors.BOLD + "1m加粗" + bcolors.ENDC)
+print (bcolors.UNDERLINE + "4m下划线" + bcolors.ENDC) """
+#########################################################
+"""35 求100之内的素数"""
+# low = int(input("最小数："))
+# high = int(input("最大数："))
+# sushu = []
+# for i in range(low, high+1):
+#     if i > 1:
+#         for j in range(2, i):
+#             if i % j == 0:
+#                 break
+#         else:
+#             sushu.append(i)
+# print(sushu)
+
