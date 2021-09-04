@@ -114,13 +114,19 @@ else:
 # else:
 #     print ('data error')
 #########################################################
-"""32 按逗号分隔列表。"""
+"""32 按相反的顺序输出列表的值"""
+# a = ['one', 'two', 'three']
+# for i in a[::-1]:
+#     print (i)
+
+#########################################################
+"""33 按逗号分隔列表。"""
 # s = [1,2,3,4,5,6,7]
 # for i in range(len(s)-1):
 #     print(s[i],end=",")
 # print(s[-1])
 #########################################################
-"""33 练习函数调用。使用函数，输出三次 RUNOOB 字符串。"""
+"""34 练习函数调用。使用函数，输出三次 RUNOOB 字符串。"""
 # def runoob():
 #     print("RUNOOB")
 
@@ -133,7 +139,7 @@ else:
 # if __name__ == "__main__":
 #     runoobs()
 #########################################################
-"""34 文本颜色设置"""
+"""35 文本颜色设置"""
 """ class bcolors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
@@ -152,7 +158,7 @@ print (bcolors.ENDC + "0m普通色" + bcolors.ENDC)
 print (bcolors.BOLD + "1m加粗" + bcolors.ENDC)
 print (bcolors.UNDERLINE + "4m下划线" + bcolors.ENDC) """
 #########################################################
-"""35 求100之内的素数"""
+"""36 求100之内的素数"""
 # low = int(input("最小数："))
 # high = int(input("最大数："))
 # sushu = []
@@ -164,4 +170,71 @@ print (bcolors.UNDERLINE + "4m下划线" + bcolors.ENDC) """
 #         else:
 #             sushu.append(i)
 # print(sushu)
+#########################################################
+"""37 对10个数进行排序"""
+# l = []
+# for i in range(5):
+#     l.append(int(input("输入")))
+# l.sort()
+# print(l)
+""" l = []
+for i in range(5):
+    l.append(int(input("输入")))
+for i in range(5-1):
+    for j in range(i+1,5):
+        if l[i]>l[j]:
+            l[i],l[j]=l[j],l[i]
+print(l) """
 
+#########################################################
+"""38 求一个3*3矩阵主对角线元素之和。"""
+# A = {}
+# for i in range(3):
+#     for j in range(3):
+#         A[i,j] = int(input('Enter a number:'))
+# diag = []
+# for m in A.keys():
+#     if m[0] == m[1]:
+#         diag.append(A[m])
+# print(sum(diag))
+#########################################################
+"""39 有一个已经排好序的数组。现输入一个数，要求按原来的规律将它插入数组中。
+首先判断此数是否大于最后一个数，然后再考虑插入中间的数的情况，插入后此元素之后的数，依次后移一个位置。
+程序源代码："""
+# if __name__ == '__main__':
+#     # 方法一 ： 0 作为加入数字的占位符
+#     a = [1,4,6,9,13,16,19,28,40,100,0]
+#     print ('原始列表:')
+#     for i in range(len(a)):
+#         print (a[i])
+#     number = int(input("\n插入一个数字:\n"))
+#     end = a[9]
+#     if number > end:
+#         a[10] = number
+#     else:
+#         for i in range(10):
+#             if a[i] > number:
+#                 temp1 = a[i]
+#                 a[i] = number
+#                 for j in range(i + 1,11):
+#                     temp2 = a[j]
+#                     a[j] = temp1
+#                     temp1 = temp2
+#                 break
+#     print ('排序后列表:')
+#     for i in range(11):
+#         print (a[i])
+
+#########################################################
+"""40 将一个数组逆序输出。"""
+""" s = [1,2,3,4]
+a = s[::-1]
+print("a =",a)
+#############
+b=[]
+for i in range(len(s)):
+    b.append(s.pop())
+print("b =",b)
+#############
+a.reverse()
+print("a =",a) """
