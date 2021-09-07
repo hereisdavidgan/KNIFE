@@ -57,6 +57,7 @@ print ('变量 c 取反结果为： %d' % d)
 #########################################################
 """56 画图，学用circle画圆形"""
 
+from _typeshed import Self
 import turtle
 turtle.title("画圆")
 turtle.setup(800, 600, 0, 0)
@@ -67,18 +68,18 @@ pen.shape("turtle")
 pen.speed(1)
 pen.circle(100)
 
-
-# from Tkinter import *
+#########################################################
+from tkinter import *
  
-# canvas = Canvas(width=800, height=600, bg='yellow')
-# canvas.pack(expand=YES, fill=BOTH)
-# k = 1
-# j = 1
-# for i in range(0,26):
-#     canvas.create_oval(310 - k,250 - k,310 + k,250 + k, width=1)
-#     k += j
-#     j += 0.3
-# mainloop()
+canvas = Canvas(width=800, height=600, bg='yellow')
+canvas.pack(expand=YES, fill=BOTH)
+k = 1
+j = 1
+for i in range(0,26):
+    canvas.create_oval(310 - k,250 - k,310 + k,250 + k, width=1)
+    k += j
+    j += 0.3
+mainloop()
 
 #########################################################
 """57 画图，学用line画直线"""
