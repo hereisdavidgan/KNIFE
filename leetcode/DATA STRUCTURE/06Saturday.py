@@ -21,7 +21,7 @@ class Solution:
 
 > 执行用时：72 ms, 在所有 Python3 提交中击败了93.73%的用户
 > 内存消耗：15.1 MB, 在所有 Python3 提交中击败了43.01%的用户
-
+#########################################################
 ## [383. 赎金信](https://leetcode-cn.com/problems/ransom-note/)
 
 >给定一个赎金信 (ransom) 字符串和一个杂志(magazine)字符串，判断第一个字符串 ransom 能不能由第二个字符串 magazines 里面的字符构成。如果可以构成，返回 true ；否则返回 false。
