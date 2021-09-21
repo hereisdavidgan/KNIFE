@@ -19,3 +19,13 @@ class Solution:
             l2.next = self.mergeTwoLists(l1, l2.next)
             return l2
 #########################################################
+class Solution:
+    def removeElements(self, head: ListNode, val: int) -> ListNode:
+        if head is None:
+            return head
+        head.next = self.removeElements(head.next, val)
+        if head.val == val:
+            next_node = head.next 
+        else:
+            next_node = head
+        return next_node
