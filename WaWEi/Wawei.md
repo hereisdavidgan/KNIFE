@@ -108,19 +108,41 @@ print(i.count(j))
 400   
 
 ```python
-data = []
 while True:
     try:
-        n = input()
-        ta = []
-        for i in range(int(n)):
-            ta.append(int(input()))
-        uniq = set(ta)
-        for j in sorted(uniq):
-            print(j)
-    except (EOFError, KeyboardInterrupt):
+        i = int(input())
+        k = []
+        for j in range(i):
+            k.append(int(input()))
+        l = set(k)
+        for m in sorted(l):
+            print(m)
+    except:
         break
 ```
 
+## HJ4 字符串分隔
+>描述
+•连续输入字符串，请按长度为8拆分每个输入字符串并进行输出；
+•长度不是8整数倍的字符串请在后面补数字0，空字符串不处理。
+（注：本题有多组输入）
 
+>输入：
+abc
+123456789
+
+>输出：
+abc00000
+12345678
+90000000
+
+```python
+while True:
+    try:
+        i = input()
+        for j in range(0, len(i), 8):
+            print("{0:0<8s}".format(i[j:j+8]))
+    except:
+        break
+```
 
