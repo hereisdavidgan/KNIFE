@@ -164,4 +164,86 @@ while True:
     except:
         break
 ```
+## HJ6 质数因子
+> 功能:输入一个正整数，按照从小到大的顺序输出它的所有质因子（重复的也要列举）（如180的质因子为2 2 3 3 5 ）
+>输出描述：
+按照从小到大的顺序输出它的所有质数的因子，以空格隔开。最后一个数后面也要有空格。
+
+> 输入：
+180
+输出：
+2 2 3 3 5
+
+```python
+import math
+n = int(input())
+for i in range(2, int(math.sqrt(n))+1):
+    while n % i == 0:
+        print(i, end=' ')
+        n = n // i
+if n > 2:
+    print(n)
+```
+
+## HJ7 取近似值
+> 写出一个程序，接受一个正浮点数值，输出该数值的近似整数值。如果小数点后数值大于等于 0.5 ,向上取整；小于 0.5 ，则向下取整。
+
+>input: 5.5     output:6
+>input: 2.499   output:2
+
+```python
+print(int(float(input())+0.5))
+```
+
+
+## HJ8 合并表记录
+> 数据表记录包含表索引和数值（int范围的正整数），请对表索引相同的记录进行合并，即将相同索引的数值进行求和运算，输出按照key值升序进行输出。
+
+>输入描述：
+>先输入键值对的个数n（1 <= n <= 500）
+>然后输入成对的index和value值，以空格隔开
+
+>输出描述：
+>输出合并后的键值对（多行）
+
+
+>input: 
+4
+0 1
+0 2
+1 2
+3 4
+>>output:
+0 3
+1 2
+3 4
+
+>input:
+3
+0 1
+0 2
+8 9
+>>output:
+0 3
+8 9
+
+```python
+dict = {}
+while True:
+    try:
+        a = int(input())
+        for i in range(a):
+            inp = input().split()
+            v1 = int(inp[0])
+            v2 = int(inp[1])
+            if v1 in dict:
+                dict[v1] += v2
+            else:
+                dict[v1] = v2
+        for i, j in sorted(dict.items()):
+            print(i, j)
+    except:
+        break
+```
+
 
