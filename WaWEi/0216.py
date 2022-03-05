@@ -1,22 +1,22 @@
-# d = {}
-#
-# while True:
-#     try:
-#         s = input().split("\\")[-1].split(" ")
-#         print(s)
-#         s1 = "{} {}".format(s[0][-16:], s[1])
-#         print(s1)
-#         if s1 not in d:
-#             d[s1] = 1
-#         else:
-#             d[s1] += 1
-#     except:
-#         break
-#
-# temp = list(d.items())[-9:]
-# for i in temp:
-#     res = "{} {}".format(i[0], i[1])
-#     print(res)
+d = {}
+
+while True:
+    try:
+        s = input().split("\\")[-1].split(" ")
+        print(s)
+        s1 = "{} {}".format(s[0][-16:], s[1])
+        print(s1)
+        if s1 not in d:
+            d[s1] = 1
+        else:
+            d[s1] += 1
+    except:
+        break
+
+temp = list(d.items())[-9:]
+for i in temp:
+    res = "{} {}".format(i[0], i[1])
+    print(res)
 
 i = input()
 print(i)

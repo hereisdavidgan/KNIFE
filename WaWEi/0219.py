@@ -1,33 +1,35 @@
-# import sys
-# data = sys.stdin
-# for x in data:
-#     x = int(x.strip())
-#     if x != 0:
-#         print(int(x // 2))
+import sys
+data = sys.stdin
+for x in data:
+    x = int(x.strip())
+    if x != 0:
+        print(int(x // 2))
 
-# import sys
-#
-#
-# def f(n):
-#     if n == 0: return 0
-#     if n == 1: return 0
-#     if n >= 2: return f(n - 2) + 1
-#
-#
-# if __name__ == '__main__':
-#     data = sys.stdin
-#     for x in data:
-#         x = int(x.strip())
-#         if x != 0:
-#             print(f(x))
+import sys
 
-# import sys
-# data = sys.stdin
-# for x in data:
-#     print(x.strip())
 
-# import sys
-# data = str(sys.stdin)
+def f(n):
+    if n == 0: return 0
+    if n == 1: return 0
+    if n >= 2: return f(n - 2) + 1
+
+
+if __name__ == '__main__':
+    data = sys.stdin
+    for x in data:
+        x = int(x.strip())
+        if x != 0:
+            print(f(x))
+
+import sys
+data = sys.stdin
+for x in data:
+    print(x.strip())
+
+import sys
+data = str(sys.stdin)
+
+
 data = input()
 dic1 = {}
 str1 = ''
