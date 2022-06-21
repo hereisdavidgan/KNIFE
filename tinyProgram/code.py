@@ -90,3 +90,6 @@ class GUI:
 if __name__ == '__main__':
     a = GUI()
     a.root.mainloop()
+
+
+https://blog.csdn.net/qq_45664055/article/details/117625146
